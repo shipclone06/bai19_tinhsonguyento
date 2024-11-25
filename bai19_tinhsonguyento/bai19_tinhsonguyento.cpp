@@ -17,6 +17,28 @@ bool(kiemtraSNT(int s)) {
 		return false;
 	}
 }
+bool kiemtraSCP(int x) {
+	if (sqrt(x) == (int)sqrt(x)) return true;
+	return false;
+}
+int main()
+{
+	cout << "kiem tra so co phai la so nguyen to khong!\n";
+
+	int so;
+	cout << "nhap so: "; cin >> so;
+
+	for (int y = 1; y<= 0; y++)
+	{
+		if (kiemtraSNT(y) == true) cout << y << " ";
+	}
+	cout << endl;
+	for (int i = 1; i < 100; i++)
+	{
+		if (kiemtraSCP(i) == true)cout << i << " ";
+	}
+	return 0;
+}
 int main() {
 	int n;
 	int dem = 0;
@@ -25,6 +47,9 @@ int main() {
 	{
 		if (kiemtraSNT(y) == true) cout << y << " ";
 	}
+	
+	
+
 	/*
 	for (int i = 1; i <= n; i++)
 	{
